@@ -211,6 +211,8 @@ public class SamlSecurityRealm extends SecurityRealm {
         username = username.toLowerCase();
       } else if (this.usernameCaseConversion.compareTo("uppercase") == 0) {
         username = username.toUpperCase();
+      } else if (this.usernameCaseConversion.compareTo("email") == 0) {
+        username = username.split("@",2)[0];
       }
     }
     // create user data

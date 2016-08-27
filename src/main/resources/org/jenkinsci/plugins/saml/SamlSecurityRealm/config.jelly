@@ -25,6 +25,7 @@
         <f:option value="none" selected="${instance.usernameCaseConversion == 'none'}">None</f:option>
         <f:option value="lowercase" selected="${instance.usernameCaseConversion == 'lowercase'}">Lowercase</f:option>
         <f:option value="uppercase" selected="${instance.usernameCaseConversion == 'uppercase'}">Uppercase</f:option>
+        <f:option value="email" selected="${instance.usernameCaseConversion == 'email'}">E-Mail</f:option>
       </select>
     </f:entry>
     
